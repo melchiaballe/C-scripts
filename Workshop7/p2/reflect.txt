@@ -1,0 +1,16 @@
+
+1.
+  The benefit of using a structure is to have a simplified group of variables associated to its structure. In the program the 
+differenciation between PlayerInfo and GameInfo was a easier indication in what variables should I assign and use at a given point in 
+the program. Hence, on this line `if(gInfo.maxMoves < pInfo.numLives || gInfo.maxMoves > (int)(gInfo.pathLength * .75))` it was easier
+to identify the variables that would help in the comparison.
+
+2.
+  In order to achieve this we can create a new structure called GameHistory wherein we can add the list appropriate values of the results in the
+it where we can store the user, result, lives, and all significant details. We can make use of parallel arrays in order to get matching values
+per key.
+
+3.
+  The part where I spent most time working on is the computations and outputs for location, treause, lives and number of moves.
+In order to overcome this I created a pseudocode to run through the possible values that are allowed and how would it affect the 
+entire program.

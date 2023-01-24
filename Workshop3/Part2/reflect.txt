@@ -1,0 +1,23 @@
+
+
+1.) `(c1BagWeight >= 0 && c1BagWeight <= 250) ? (cNumberOfDailyServe >= 1 && cNumberOfDailyServe <= 4) ? 1 : 0 : 
+    (c1BagWeight > 250 && c1BagWeight <= 999) ? (cNumberOfDailyServe >= 5 && cNumberOfDailyServe <= 9) ? 1 : 0 : 
+    (cNumberOfDailyServe >= 10) ? 1 : 0`. 
+    
+        For me this was the hardest part because of the usage of shorthand nested if statements made it so confusing 
+    to evaluate the outcome. The solution for this problem was first evaluate the parent condition in this case was the `c1BagWeight`.
+    Afterwards we have to match it with it's inclusive condition. Then we would check the inclusive condition for the `cNumberOfDailyServe`.
+    once it matches return output as `1` otherwise `0`. Then continue with the evaluation of other clauses for `c1BagWeight` and it's corresponding
+    inclusive condition for `cNumberOfDailyServe`.
+
+2.) `(c1Type == 'l' || c1Type == 'L') ? 1 : 0`
+    a.) !(c1Type == 'l' && c1Type == 'L') ? 1 : 0
+    b.) (!c1Type == 'l' || !c1Type == 'L') ? 1 : 0
+
+
+3.) 
+        In part1 the price average is used as a comparison in the program therefore to prevent changing the value in the middle of the program, we set it to 
+    `constant` or to copy and paste the entire formula again and again when the average is used. On the other hand, part2 the converted value of Celsius to 
+    Farenheit is not used in any part of the code as a comparison or part of a formula. Hence we didn't have to store it into a variable.
+
+

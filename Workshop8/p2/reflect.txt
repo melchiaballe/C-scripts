@@ -1,0 +1,21 @@
+
+1.
+Given the ReportData structure that has 3 integer and 7 double variables the total number or minimum bytes would be 62 which is 6 for integer and 56 for double.
+In order to make the passing of information be improved in the example of `displayReportData` function, we can do a pass by reference or passing the addresses of
+the variables to the function.
+
+2.
+In order to improve the ReportData structure and reduce redundancy with the CatFoodInfo structure we can do it this way.
+struct ReportData
+{
+    struct CatFoodInfo cFoodInfo;
+    double weightInKg;
+    int grams;
+    double totalServing;
+    double totalCostPerServing;
+    double costPerServing;
+    double costCalPerServing;
+};
+With this structure we are now calling the CatFoodInfo structure inside the ReportData. Then in the displayReportData we can alter it by changing the data
+to this `rData.cFoodInfo.SKU, rData.cFoodInfo.price, rData.cFoodInfo.weightInPounds, rData.weightInKg, rData.grams, rData.cFoodInfo.calPerServing, 
+rData.totalServing, rData.costPerServing, rData.costCalPerServing`

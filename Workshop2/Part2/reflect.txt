@@ -1,0 +1,26 @@
+
+1.) 
+    Simply because the double and float values are imprecise. This would lead to imperfect calculations which has to be either rounded off
+or converted into a decimal for computation to retain accuracy.
+
+
+2.) 
+fifties = (int)(((double)subTotal / 100) / 50);
+wholeNum = (double)subTotal / 100;
+remainder = ((((double)(subTotal % 50) + ((((double)subTotal / 100) - wholeNum))) + .005) * 100);
+
+twenties = (((double)remainder / 100) / 20);
+remainder = ((((double)remainder / 100) - (twenties * 20)) + 0.005) * 100;
+
+
+3.)
+    a.) By creating a function that would accept an integer and return a double type value
+        double testCalc(int val) {
+            return val / 100
+        }
+    b.) By using explicit casting
+        int testVal = 7345
+        double val = ((double)testVal / 100)
+    c.) or using printf format for long float %lf
+        int testVal = 7345
+        printf("%lf", ((double)testVal / 100))

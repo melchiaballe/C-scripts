@@ -1,0 +1,62 @@
+
+1.)
+
+  Selection constructs are extremely important since it is used to identify a path with a yes
+or no answer. Without selection construct a program cannot accomplish complex task that would 
+require a yes or no answer to a problem.
+
+  a.)
+    if(apples < 0) {
+      printf("ERROR: Value must be 0 or more.\n");
+    }
+      In this case it is used to verify if the error occured hence without placing this
+    we cannot identify if the value being inputted is an error or not
+
+  b.) if(pickedOrange > oranges || pickedOrange > tempPickedComparison) 
+      In this particular scenario the we used it in order to determine if the value being
+    picked is more than the desired outcome. The importance of this selection is in order
+    for the program to gauge the inputted result of the user and identify if it went beyond
+    the desired limit
+
+  c.) else if((pickedOrange <= oranges && pickedOrange <= tempPickedComparison) &&  pickedOrange > 0)
+      In here we created a complex check to determine if user input is on the parameter of the required numnber.
+    The solution came to this point since we have to trap the valid values inputted by the user then evaluate if
+    it means that our program is done or keeps on going.
+
+
+2.)
+
+    a.) else if((pickedOrange <= oranges && pickedOrange <= tempPickedComparison) &&  pickedOrange > 0) {
+          tempPickedComparison -= pickedOrange;
+          if(tempPickedComparison == 0)
+            printf("Great, that's the oranges done!\n\n"), isCompleted = 1;
+          else
+            printf("Looks like we still need some ORANGES...\n");
+        }
+
+        On this particular nested sample it is being implemented and used on the following manner
+        1st -> We have to identify if the value that the user inputted is within the scope of the required number parameter
+              which is either less than or equal to the amount of items to be picked but not zero
+        2nd -> Then we have to deduct the value of remaining items to be picked in order for us to identify if all the
+              items are already selected or we would let the user pick more
+        3rd -> Once the user has picked all or the amount to be picked is equal to zero. We are therefore done with the execution
+
+    b.) if(oranges != 0) {
+            tempPickedComparison = oranges;
+            isCompleted = 0;
+            do {
+            } while (isCompleted == 0);
+        }
+
+        This nested sample is implemented by this manner
+        1st -> We have to check if the number of items for grocery is not equal to zero. Otherwise we would not do anything
+        2nd -> We would then initialize the values of temporary container of amount of oranger to be picked and a flag to determine
+              if all items are already picked
+        3rd -> We would execute a do while loop that would only stop once the picking is complete.
+3.)
+
+  My favourite iteration construct is a for statement. On this particular iteration it is cleaner and easier to understand
+since the declarations are on top and also the unary operator hence it is more organized compared to do while and while loop.
+More or less do while and while statements are common the only difference is a do while loop will execute the codeblock under do before running the loop.
+
+

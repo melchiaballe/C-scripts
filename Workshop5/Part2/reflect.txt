@@ -1,0 +1,28 @@
+
+1. 2 selection constructs: switch, and if statements. 
+Switch:
+  switch (inputMonth)
+  {
+    case 11:
+        printf("NOV-");
+        break;
+    case 12:
+        printf("DEC-");
+        break;
+  }
+If statement:
+  If(inputMonth == 11) {
+    printf("NOV-");
+  } else if (inputMonth == 12){
+    printf("DEC-");
+  }
+
+
+2.
+  3 types of iteration constructs: while, do while, and for. I used a while loop since the validation is not bound by a number but
+it is dependent on a specified condition and will continue until the desired output is placed.
+
+
+3.
+  For debugging the program what I did was separate code blocks into different segment in order to identify a certain problem per block.
+Afterwards on the calculations side I used the Trial and Error method to identify the proper computations of each problem.

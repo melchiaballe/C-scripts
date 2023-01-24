@@ -1,0 +1,41 @@
+1.
+On this activity I created 3 additional helper tools to make deveopment easier. The functions are as follows sortArray, dateCalculator,
+and findAppointmentIndex. The prototype and purpose of the functions are the ff.
+
+void sortArray(struct Appointment appoints[], int max);
+This functionality is used to compare the value of the date in order to sort it. In order to do this we first have to convert all the
+dates into a machine comparable value which is type long long we then proceeded with the calculation and used the process of bubble sort
+in order to accomplish this.
+
+long long dateCalculator(double value, char conversionMethod[NAME_LEN]);
+When we see the sorting functionality there are a lot of redunduncy found in the computation of dates. Therefore to simplify the conversionMethod
+process and follow a DRY (Don't Repeat Yourself) approach I created a function that would handle the conversion and has a parameter of the value
+which is the number conversion of the date and conversionMethod which will identify the calculations based on it.
+
+int findAppointmentIndex(const struct Appointment appoints[], int patientNum, int year, int month, int day, int max);
+Lastly I replicated the function to find the index so that it would be easier to get the index can be reused multiple times. The parameters
+of this functions are appointment array which contains the list of appointments. patientNum, year, month, day. Which is used for comparison
+to get index and max to get the loop counter value.
+
+2.
+
+In order to achieve to achieve the goal of the addAppointment functionality I was using 100 lines of code in total for it's execution with
+the use of functions, but without functions the estimated number of lines for this functionality alone would reach in the range of 300
+to 400. The reason for that is since this function is quite big we have to put it into different segments of implementation and a lot of
+data input has to be taken accounted. Hence, we have to add more user input receivers and validations for each value that the user has added.
+With the use of functions it made everything easier since we do not have to repeat the same code and validation twice. In order to consolidate
+the code I first drew out a sketch of the things that are recurring and the sequence of program execution. Afterwards, I started with the user inputs
+in that scenario I utilized the functionalities that was first created in core to lessen the load of checking and validating. Next is creating
+the loop sequence in order to ensure the process and data flow of the functionality is proper. Then, added a few checks and enhancement to overall
+better the code quality of the function
+
+3.
+For me to successfuly plan and strategize this huge milestone. I first created a trello board and decided to create a sprint like process in
+the development. Then I created a ticket for every task with that I tried to write the basic requirements of each functionality one example
+in removing and adding an appointment I found that both tickets are quite similar in the removal and adding part of therefore those two were combined.
+After creating tickets and adding descriptions to all the specified requirements and its outcome. I then started and would have a deadline of atleast one
+working segment of a functionality so that the timelines would be accurate and implementation would be smooth. One of the biggest challenges I had was with
+the addAppointment and sorting functionality. Both these has a complicated idea and I had to do a lot of trial and error to be successful in the sequence
+and it's outcome. Another thing was with the core function inputCString since a lot is using it and any minor change can affect the entire application therefore
+it was really hard to debug and resolve a issue within the functionality. But, after a few testing and error handling was able to fully complete and overcome
+the challenges that was presented

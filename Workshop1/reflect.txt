@@ -1,0 +1,16 @@
+
+1. What you have learned in completing this workshop (do not leave anything out!)
+        During this activity I learned how to use Visual Code properly, write and implement a simple C program, and 
+    learn the importance of ssh and sftp. Furthermore, this allowed me to explore the different methods in printing
+    a line of text and how to format it. Afterwards, I was able to learn the ability of using a ssh protocol to connect
+    to a secure server and the usage of FileZilla
+
+2. Briefly describe what SSH is and how you used it in this workshop
+        SSH is a secure protocol that would encrypt and authenticate a connection based on a unique ssh key. It is primarily used to connect onto a
+    secure server that would let a remote user access the terminal and do certain operations on it. For this workshop it is used to securely connect a
+    user to the matrix server and at the same time place the users ssh key by adding a RSA fingerprint.
+
+3. Briefly describe what SFTP is and how you used it in this workshop
+        SFTP is a secure file transfer protocol that would ensure data integrity and data security while a file transfer. It is implemented by providing
+    the host then providing the credentials that would then establish a secure connection to the server. Therefore, SFTP is used in order to verify the
+    secure connection between a user and the server and inline would establish a much more secure file transfer.
